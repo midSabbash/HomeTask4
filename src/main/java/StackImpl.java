@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 class StackImpl implements Stack{
 
@@ -31,7 +32,7 @@ class StackImpl implements Stack{
     }
 
     public void clear() {
-        for(int i = 0; i < stack.length; i++ ) stack[i] = '_';
+        Arrays.fill(stack,'_');
     }
 
     public void print() {
