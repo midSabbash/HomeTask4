@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 
 class StackImpl implements Stack{
 
@@ -32,6 +33,7 @@ class StackImpl implements Stack{
 
     public void clear() {
         for(int i = 0; i < stack.length; i++ ) stack[i] = '_';
+        size = 0;
     }
 
     public void print() {
